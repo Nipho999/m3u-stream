@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: flask-m3u8-viewer
+    env: docker
+    plan: free
+    branch: main  # or your branch name
+    region: oregon  # optional: choose your region
+    dockerfilePath: ./Dockerfile
+    buildCommand: ""
+    startCommand: ""
+    autoDeploy: true
